@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Categories, SortPopup, BookBlock, PizzaLoadingBlock } from '../components';
 
 import { setCategory, setSortBy } from '../redux/actions/filters';
-import { fetchPizzas } from '../redux/actions/pizzas';
+import { fetchPizzas } from '../redux/actions/book';
 
 const categoryNames = ['Драма', 'Фантазия', 'Саморазвитие', 'Психология', 'Ужасы'];
 const sortIems = [
@@ -15,9 +15,9 @@ const sortIems = [
 
 function Home() {
   const dispatch = useDispatch();
-  const items = useSelector(({ pizzas }) => pizzas.items);
+  const items = useSelector(({ book }) => book.items);
   const cartItems = useSelector(({ cart }) => cart.items);
-  const isLoaded = useSelector(({ pizzas }) => pizzas.isLoaded);
+  const isLoaded = useSelector(({ book }) => book.isLoaded);
   const { category, sortBy } = useSelector(({ filters }) => filters);
 
   React.useEffect(() => {

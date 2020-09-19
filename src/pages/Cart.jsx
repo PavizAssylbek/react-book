@@ -35,7 +35,7 @@ function Cart() {
   };
 
   const onClickOrder = () => {
-    console.log('ВАШЕ КНИГИ', items);
+    console.log('КНИГИ КОТОРЫЕ ВЫ КУПИЛИ', items);
   };
 
   return (
