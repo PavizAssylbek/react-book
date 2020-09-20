@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const Button = ({ onClick, className, outline, children }) => {
+const Button = props => {
+
+  const { onClick, className, outline, children } = props
+
   return (
     <button
       onClick={onClick}
@@ -16,6 +19,14 @@ const Button = ({ onClick, className, outline, children }) => {
 
 Button.propTypes = {
   onClick: PropTypes.func,
+  classname: PropTypes.string,
+  outline: PropTypes.bool
 };
+
+Button.defaultProps = {
+  onClick: () => {},
+  classname: "",
+  outline: false
+} 
 
 export default Button;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render BookBlock component should contain function onClick={Func} 1`] = `ShallowWrapper {}`;
+
+exports[`should render BookBlock component should contain function onClickAddPizza  1`] = `ShallowWrapper {}`;
+
+exports[`should render BookBlock component should contain id 1`] = `ShallowWrapper {}`;
+
+exports[`should render BookBlock component should contain img  1`] = `ShallowWrapper {}`;
+
+exports[`should render BookBlock component should contain name  1`] = `ShallowWrapper {}`;
+
+exports[`should render BookBlock component should contain price and addedCount  1`] = `ShallowWrapper {}`;

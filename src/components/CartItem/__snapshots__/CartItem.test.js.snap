@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render CartItem component should contain function onClick={Func} 1`] = `
+<CartItem
+  onClick={[Function]}
+  onMinus={[Function]}
+  onPlus={[Function]}
+  onRemove={[Function]}
+/>
+`;
+
+exports[`should render CartItem component should contain id 1`] = `
+<CartItem
+  id={1}
+  onClick={[Function]}
+/>
+`;
+
+exports[`should render CartItem component should contain name and author  1`] = `
+<CartItem
+  author="string"
+  name="string"
+  onClick={[Function]}
+/>
+`;
+
+exports[`should render CartItem component should contain totalCount 1`] = `
+<CartItem
+  onClick={[Function]}
+  totalCount={1}
+/>
+`;
+
+exports[`should render CartItem component should contain totalPrice 1`] = `
+<CartItem
+  onClick={[Function]}
+  totalPrice={1}
+/>
+`;

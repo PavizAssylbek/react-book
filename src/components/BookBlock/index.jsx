@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from '../Button';
 
-function PizzaBlock({ id, name,author, imageUrl, price, onClickAddPizza, addedCount }) {
+function BookBlock({ id, name,author, imageUrl, price, onClickAddPizza, addedCount }) {
 
   const onAddPizza = () => {
     const obj = {
@@ -42,17 +42,18 @@ function PizzaBlock({ id, name,author, imageUrl, price, onClickAddPizza, addedCo
   );
 }
 
-PizzaBlock.propTypes = {
+BookBlock.propTypes = {
   name: PropTypes.string,
+  id: PropTypes.number,
   imageUrl: PropTypes.string,
   price: PropTypes.number,
   onClickAddPizza: PropTypes.func,
   addedCount: PropTypes.number,
 };
 
-PizzaBlock.defaultProps = {
+BookBlock.defaultProps = {
   name: '---',
   price: 0,
 };
 
-export default PizzaBlock;
+export default BookBlock;

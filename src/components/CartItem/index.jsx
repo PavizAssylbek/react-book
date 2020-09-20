@@ -1,11 +1,13 @@
 import React from 'react';
-import Button from './Button';
+import Button from '../Button';
+import PropTypes from 'prop-types'
 
-import icon from '../assets/img/bookicon.jpg'
+import icon from '../../assets/img/bookicon.jpg'
 
-const CartItem = ({ id, name, author, totalPrice, totalCount, onRemove, onMinus, onPlus }) => {
-console.log("CartItem -> author", author)
+const CartItem = props => {
   
+  const {id, name, author, totalPrice, totalCount, onRemove, onMinus, onPlus} = props
+
   const handleRemoveClick = () => {
     onRemove(id);
   };
@@ -97,5 +99,21 @@ console.log("CartItem -> author", author)
     </div>
   );
 };
+
+
+CartItem.propTypes = {
+  name: PropTypes.string,
+  id: PropTypes.number,
+  author: PropTypes.string,
+  totalPrice: PropTypes.number,
+  totalCount: PropTypes.number,
+  onRemove: PropTypes.func,
+  onMinus: PropTypes.func,
+  onPlus: PropTypes.func
+};
+
+CartItem.defaultProps = {
+  onClick: () => {},
+} 
 
 export default CartItem;

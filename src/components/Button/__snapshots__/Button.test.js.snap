@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Button component should contain boolean 1`] = `ShallowWrapper {}`;
+
+exports[`should render Button component should contain function onClick={Func} 1`] = `ShallowWrapper {}`;
+
+exports[`should render Button component should contain string 1`] = `ShallowWrapper {}`;
